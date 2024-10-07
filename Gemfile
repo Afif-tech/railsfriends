@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.5'
 
 gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
-gem 'sqlite3'
+gem 'pg', '~> 1.5', '>= 1.5.8'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -34,7 +34,9 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  #gem 'sqlite3'
 end
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
